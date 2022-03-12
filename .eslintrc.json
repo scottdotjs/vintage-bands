@@ -1,0 +1,32 @@
+{
+	"parser":"@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": 2019,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"plugins": [],
+	"extends": "standard",
+	"rules": {
+		"array-bracket-spacing": [ "error", "always" ],
+		"comma-dangle": [ "error", "always-multiline" ],
+		"comma-spacing": [ "error" ],
+		"eol-last": [ "error", "always" ],
+		"keyword-spacing": [ "error", { "before": true, "after": true } ],
+		"indent": [ "error", "tab", { "SwitchCase": 1 } ],
+		"object-curly-spacing": [ "error", "always" ],
+		"no-tabs": "off",
+		"semi": [ "error", "always" ],
+		"space-before-blocks": [ "error", "always" ],
+		"space-infix-ops": [ "error" ],
+		"quotes": [ "error", "single" ]
+	}
+}

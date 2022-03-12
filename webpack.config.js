@@ -1,3 +1,4 @@
+const ESLintPlugin = require('eslint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
@@ -32,13 +33,6 @@ module.exports = (env, argv) => {
 					exclude: /(node_modules)/,
 					loader:  require.resolve('babel-loader'),
 				}, {
-					test:    /\.js$/,
-					exclude: /(node_modules)/,
-					loader:  'eslint-loader',
-					options: {
-						fix: true,
-					},
-				}, {
 					test: /\.svelte$/,
 					use:  {
 						loader:  'svelte-loader',
@@ -52,6 +46,7 @@ module.exports = (env, argv) => {
 			],
 		},
 		plugins: [
+			new ESLintPlugin({}),
 			new MiniCssExtractPlugin({
 				filename: '[name].css',
 			}),
