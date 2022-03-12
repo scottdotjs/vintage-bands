@@ -1,4 +1,4 @@
-const ESLintPlugin = require('eslint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
@@ -28,10 +28,6 @@ module.exports = (env, argv) => {
 						argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
 						'css-loader',
 					],
-				}, {
-					test:    /\.js$/,
-					exclude: /(node_modules)/,
-					loader:  require.resolve('babel-loader'),
 				}, {
 					test: /\.svelte$/,
 					use:  {
