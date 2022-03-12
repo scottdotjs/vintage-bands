@@ -7,5 +7,5 @@ import { orchestra }  from './recipes/orchestra.js'
 import { place }      from './recipes/place.js'
 
 export const recipes = Object.assign(
-	{}, band, base, instrument, leader, names, band, orchestra, place,
+	{}, band, base, instrument, leader, names, band, orchestra, place
 )
