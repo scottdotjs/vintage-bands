@@ -1,32 +1,47 @@
 {
 	"parser":"@babel/eslint-parser",
 	"parserOptions": {
-		"ecmaVersion": 2019,
-		"sourceType": "module",
-		"ecmaFeatures": {
-			"jsx": true,
-			"experimentalObjectRestSpread": true
-		}
+		"ecmaVersion": "latest",
+		"sourceType": "module"
 	},
 	"env": {
 		"browser": true,
 		"es6": true,
 		"node": true
 	},
-	"plugins": [],
+	"plugins": [
+	],
+	"overrides": [
+	],
 	"extends": "standard",
 	"rules": {
 		"array-bracket-spacing": [ "error", "always" ],
-		"comma-dangle": [ "error", "always-multiline" ],
+		"comma-dangle": [ "error", {
+			"arrays": "always-multiline",
+			"objects": "always-multiline",
+			"imports": "never",
+			"exports": "never",
+			"functions": "never"
+		}],
 		"comma-spacing": [ "error" ],
+		"curly": [ "error", "multi" ],
 		"eol-last": [ "error", "always" ],
-		"keyword-spacing": [ "error", { "before": true, "after": true } ],
+		"eqeqeq": [ "error", "smart" ],
+		"import/first": "off",
 		"indent": [ "error", "tab", { "SwitchCase": 1 } ],
-		"object-curly-spacing": [ "error", "always" ],
+		"key-spacing": [ "error", { "align": "value" } ],
+		"no-console": "off",
+		"no-empty": "error",
+		"no-multi-spaces": [ "error", { "ignoreEOLComments": true, "exceptions": { "ImportDeclaration": true, "VariableDeclarator": true } } ],
 		"no-tabs": "off",
-		"semi": [ "error", "always" ],
+		"no-trailing-spaces": [ "error", { "ignoreComments": true } ],
+		"no-undef-init": "off",
+		"no-unneeded-ternary": "off",
+		"object-curly-spacing": [ "error", "always" ],
+		"quotes": [ "error", "single", { "avoidEscape": true } ],
+		"semi": [ "error", "never" ],
 		"space-before-blocks": [ "error", "always" ],
-		"space-infix-ops": [ "error" ],
-		"quotes": [ "error", "single" ]
+		"space-in-parens": "off",
+		"space-infix-ops": [ "error" ]
 	}
 }
