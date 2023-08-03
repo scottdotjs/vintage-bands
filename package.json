@@ -17,7 +17,7 @@
     "esbuild-svelte": "^0.6.3",
     "eslint-plugin-n": "^15.0.1",
     "minimist-lite": "^2.2.0",
-    "svelte": "^3.46.4",
+    "svelte": "^3.49.0",
     "twit": "^2.2.11"
   },
   "devDependencies": {
