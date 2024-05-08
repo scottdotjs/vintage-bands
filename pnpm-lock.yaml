@@ -676,7 +676,7 @@ packages:
       is-core-module: 2.8.1
       minimatch: 3.1.2
       resolve: 1.22.0
-      semver: 6.3.1
+      semver: 6.3.0
 
   /eslint-plugin-promise@6.0.0(eslint@8.11.0):
     resolution: {integrity: sha512-7GPezalm5Bfi/E22PnQxDWH2iW9GTvAlUNTztemeHb6c1BniSyoeTrM87JkC0wYdi6aQrZX9p2qEiAno8aTcbw==}
