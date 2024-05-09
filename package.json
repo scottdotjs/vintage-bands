@@ -8,7 +8,7 @@
     "prod": "node build.mjs --mode=production"
   },
   "author": "Scott Martin <scott@scottmartin.systems>",
-  "license": "ISC",
+  "license": "Custom, see README",
   "engines": {
     "node": "16.13.1"
   },
